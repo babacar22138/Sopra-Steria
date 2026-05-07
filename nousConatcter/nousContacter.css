@@ -1,0 +1,378 @@
+body{
+  width: 100%;
+  margin: 0px;
+  font-family: Hurme Geometric Sans\ 3,sans-serif;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: #465b67;
+}
+
+.img1 h1 {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 40px;
+    color: white;
+    width: 20%;
+    font-size: 76px;
+}
+
+.img1 img {
+    height: 670px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Nous connaître */
+
+.nousConnaître{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  border-radius: 100px;
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 5px black;
+}
+
+.nousConnaître:hover{
+  box-shadow: 0px 1px 30px white;
+    transition: box-shadow 0.2s;
+}
+
+.nousConnaître h4{
+  font-size: 25px;
+}
+
+.nousConnaître img{
+  height: 200px;
+  width: 130px;
+}
+
+.nousConnaître p{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ===== FORMULAIRE ===== */
+section {
+  padding: 60px 20px;
+}
+
+.stage{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-left: 75px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: gainsboro;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 5px black;
+}
+
+form h2{
+    text-align: center;
+}
+
+#input:focus{
+  background-color: #7b7b7b62;
+}
+
+.bloc1 {
+  display: flex;
+  gap: 20px;
+}
+
+.bloc2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.bloc2 textarea{
+  height: 110px;
+}
+
+.envoyer {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 16px;
+}
+
+.envoyer:hover {
+  background: #c0392b;
+  cursor: pointer;
+}
+
+.reset{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #80808096;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.reset:hover {
+  background: #808080e8;
+  cursor: pointer;
+}
+
+/* ===========================
+   PATCH RESPONSIVE (MINIMAL)
+   =========================== */
+
+/* 1) image (img1) : pleine largeur, crop propre */
+
+
+/* 2) Zone "Direction" : centrage + largeur max */
+
+
+/* 3) Images des personnes : taille contrôlée + arrondi */
+main .div1 img,
+main .div2 img{
+  width: 220px;
+  height: 220px;
+  
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 4) Bulles texte : ne pas dépasser + centrage */
+main .div1 p,
+main .div2 p{
+  max-width: 320px;
+  margin: 12px auto 0;
+  background-color: gainsboro;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+/* ORGANIGRAMME */
+main .div1,
+main .div2{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 16px;
+}
+
+main .div1 div,
+main .div2 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre */
+.organigrammeTitre{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 40px 0 30px;
+}
+
+.div1 img, .div2 img{
+  box-shadow: 0 0 5px black;
+  object-fit: cover;
+}
+
+main .div1 p, .div2 p{
+  box-shadow: 0 0 5px black;
+  font-weight: bold;
+}
+
+/* NIVEAU 1 */
+main .div1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+main .div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+main .div1 p{
+    max-width: 320px;
+    margin: 12px auto 0;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+/* Ligne verticale */
+main .div1::after{
+  content: "";
+  width: 4px;
+  height: 60px;
+  background: #bbb;
+  margin-top: -10px;
+}
+
+/* Ligne horizontale */
+main .div2::before{
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background: #bbb;
+}
+
+
+/* NIVEAU 2 */
+main .div2{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  position: relative;
+}
+
+main .div2 > div{
+  width: 260px;
+  text-align: center;
+}
+
+
+.div2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
+}
+
+.div2 p{
+    max-width: 320px;
+    margin: 12px auto 0;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+main .div2 > div{
+    width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .div2 img{
+    width: 170px;
+    height: 170px;
+}
+
+main .div2 p{
+    max-width: 220px;
+    font-size: 13px;
+    padding: 12px;
+  }
+
+@media screen and (max-width: 800px) {
+  .img1 img{
+    height: 220px;
+  }
+
+  .img1 h1{
+    top: 7%;
+    font-size: 26px;
+    width: 30%;
+  }
+  /* nous connaître */
+
+  .nousConnaître{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    width: 80%;
+  }
+
+  .nousConnaître h4{
+    font-size: 21px
+  }
+  
+  .nousConnaître p{
+    width: 100%;
+  }
+
+  /* formulaire */
+
+  form{
+    width: 70%;
+  }
+
+  .bloc1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stage{
+    margin-left: 35px;
+  }
+
+  .envoyer{
+    font-size: 13px;
+  }
+
+  /* organigramme */
+
+  main .div1 p{
+    width: 65%;
+  }
+
+  main .div1::after{
+    display: none;
+  }
+
+  main .div2::before{
+    display: none;
+  }
+  
+}

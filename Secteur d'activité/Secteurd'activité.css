@@ -1,0 +1,178 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Hurme Geometric Sans\ 3, sans-serif;
+}
+
+/* image + titre; header*/
+
+.imgHeaderPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imgHeaderPage img {
+    height: 670px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.imgHeaderPage h1 {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 25px;
+    color: white;
+    width: 46%;
+    font-size: 76px;
+}
+
+
+/* 4 secteurs d'activités */
+
+.secteur_activité {
+    width: 100%;
+    background-color: #465b67;
+    padding: 10px 0;
+}
+
+.defense_securite,
+.gouvernement,
+.vente,
+.services_financiers {
+    box-shadow: 0px 1px 20px white;
+}
+
+.services_financiers:hover, .defense_securite:hover, .vente:hover, .gouvernement:hover {
+    box-shadow: 0px 1px 30px white;
+    transition: box-shadow 0.2s;
+}
+
+.secteur_activité img {
+    border-radius: 5px;
+}
+
+
+/* services financiers*/
+
+.services_financiers,
+.defense_securite,
+.gouvernement {
+    background-color: #f6f7f9;
+    display: grid;
+    grid-template-columns: 21% 38% 38%;
+    width: 98%;
+    height: 190px;
+    margin: 10px 5px;
+    border-radius: 80px;
+    padding: 0 10px;
+    padding-top: 13px;
+    gap: 10px;
+    margin-top: 55px;
+}
+
+.titre_image {
+    width: 68%;
+    padding-left: 55px;
+}
+
+.titre_image img {
+    width: 160px;
+    height: 90px;
+}
+
+
+.titre_image h2 {
+    color: black;
+    margin-top: 16px;
+}
+
+.paragraphe1,
+.paragraphe2 {
+    padding: 0 10px;
+}
+
+/* Vente */
+
+.vente {
+    display: grid;
+    grid-template-columns: 21% 21% 25% 30%;
+    background-color: #f6f7f9;
+    width: 98%;
+    height: 190px;
+    margin: 10px 5px;
+    border-radius: 80px;
+    padding: 0 10px;
+    padding-top: 13px;
+    gap: 20px;
+    margin-top: 55px;
+}
+
+
+/* téléphone */
+
+@media screen and (max-width: 800px) {
+    .imgHeaderPage img {
+        height: 250px;
+    }
+
+    .imgHeaderPage h1 {
+        font-size: 35px;
+    }
+
+    .secteur_activité {
+        margin-top: 5px;
+    }
+
+    .gouvernement {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+        height: 600px;
+        box-shadow: 0px 1px 20px white;
+        margin-left: 18px;
+    }
+
+    .services_financiers {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+        height: 730px;
+        margin-top: 15px;
+        margin-left: 18px;
+        box-shadow: 0px 1px 20px white;
+    }
+
+    .defense_securite {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+        height: 620px;
+        box-shadow: 0px 1px 20px white;
+        margin-left: 18px;
+    }
+
+    .vente {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+        height: 710px;
+        box-shadow: 0px 1px 20px white;
+        margin-left: 18px;
+    }
+
+    .titre_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+
+}

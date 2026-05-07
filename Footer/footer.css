@@ -1,0 +1,93 @@
+footer{
+    font-family: Hurme Geometric Sans\ 3, sans-serif;
+    margin-top: 7px;
+    background-color: gainsboro;
+    padding: 50px;
+    padding-bottom: 5px;
+    height: 25%;
+}
+
+footer .A{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+footer .TXT{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 160px;
+}
+
+footer .div1 {
+    align-content: center;
+    justify-content: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: black;
+}
+
+footer iframe{
+    border-radius: 50px;
+    height: 300px;
+    width: 45%;
+}
+
+footer .com strong{
+    font-size: 25px;
+}
+
+footer .com{
+    width: 320px;
+    align-content: center;
+}
+
+
+/*RESEAU*/
+footer div ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer div > ul li a img {
+    width: 70px;
+}
+
+footer div ul li a:hover img{
+    transform: scale(1.20);
+    transition: transform 0.2s;
+}
+
+@media (max-width: 800px) {
+    footer{
+        width: 100%;
+        padding: 0;
+    }
+
+    .reseau{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer div ul{
+        padding: 0;
+    }
+
+    footer .A{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        padding: 15px;
+    }
+
+    footer iframe{
+        width: 75%;
+        height: 330px;
+    }
+}

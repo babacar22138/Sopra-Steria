@@ -199,3 +199,109 @@ main {}
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .presentations {
+        padding: 80px 60px;
+        height: auto;
+        gap: 6rem;
+    }
+
+    .conteneur {
+        grid-template-columns: 1fr;
+    }
+
+    .img-titre img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .imgHeaderPage img {
+        height: 220px;
+    }
+
+    .imgHeaderPage h1 {
+        top: 20%;
+        font-size: 20px;
+        width: 51%;
+    }
+
+    .imgHeaderPage a {
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 65%;
+    }
+
+    #boutonContacter {
+        width: auto;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .presentations {
+        padding: 40px 20px;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .conteneur {
+        grid-template-columns: 1fr;
+    }
+
+    .presentation1,
+    .presentation2,
+    .presentation3,
+    .presentation4 {
+        height: auto;
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .presentation1 p,
+    .presentation2 p,
+    .presentation3 p {
+        font-size: 13px;
+    }
+
+    #p3img2,
+    .presentation4 img {
+        display: none;
+    }
+
+    .presentation4 h3 {
+        font-size: 25px;
+    }
+
+    .chiffres {
+        font-size: 28px;
+    }
+
+    .texte {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imgHeaderPage h1 {
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .presentations h3 {
+        font-size: 32px;
+    }
+
+    .contenu p {
+        font-size: 18px;
+    }
+}

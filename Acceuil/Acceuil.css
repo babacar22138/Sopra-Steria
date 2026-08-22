@@ -69,6 +69,7 @@ main {}
     display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
     gap: 10rem;
+    background-color: #465b67;
 }
 
 .presentation{

@@ -293,7 +293,7 @@ main {}
 
 @media screen and (max-width: 480px) {
     .imgHeaderPage h1 {
-        font-size: 16px;
+        font-size: 15px;
         width: 60%;
     }
 
